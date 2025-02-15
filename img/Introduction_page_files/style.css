@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.main_logo{
+    justify-content: center;
+    display: flex;
+}
+
+h1{
+    margin: 30px 0; 
+    width: 30%;
+}
+
+.concept_title {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'GENEIANTIQUENV5-M';
+    margin-bottom: 50px;
+    opacity: 0; /* 最初は見えないようにする */
+}
+
+.concept_title.is-animated {
+    animation: concept_title 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* 背景のアニメーション */
+.concept_title.is-animated .bg-wrap::before {
+    animation: bg 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    background: linear-gradient(to right, #362ae0 0%, #3b79cc 50%, #42d3ed 100%);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+}
+
+.concept_title .bg-wrap {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.concept_title .bg-wrap .inn {
+    color: #fff;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 5px 15px;
+    position: relative;
+    z-index: 1;
+}
+
+/* アニメーションの定義 */
+@keyframes concept_title {
+    0% {
+        opacity: 0;
+        transform: scaleX(0) translateX(-5%);
+    }
+    30% {
+        transform: scaleX(1) translateX(0);
+    }
+    100% {
+        transform: scaleX(1) translateX(0);
+        opacity: 1;
+    }
+}
+/*---footer---*/
+
+.copyright{
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #5AC2DC;
+}
+

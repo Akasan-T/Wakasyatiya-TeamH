@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>店舗検索</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        }
+        #searchResults {
+        margin-top: 20px;
+        }
+        .store {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        }
+        .store h3 {
+        margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>店舗検索</h1>
+    <input type="text" id="searchInput" placeholder="店舗名を入力" />
+    <button onclick="searchStores()">検索</button>
+
+    <div id="searchResults"></div>
+
+    <script>
+        // サンプル店舗データ
+        const stores = [
+        { name: "名古屋駅エスカ店", address: "--アドレス--", phone: "--電話番号--", URL: "url" },
+        { name: "錦店", address: "--アドレス--", phone: "--電話番号--", URL:  "url" },
+        { name: "アピタ名古屋店", address: "--アドレス--", phone: "--電話番号--", URL: "url" },
+        { name: "イオンモール名古屋茶屋店", address: "--アドレス--", phone: "--電話番号--", URL: "url" },
+        ];
+
+        // 店舗検索関数
+        function searchStores() {
+        const searchInput = document.getElementById("searchInput").value.toLowerCase();
+        const results = stores.filter(store =>
+            store.name.toLowerCase().includes(searchInput)
+        );
+
+        const resultsDiv = document.getElementById("searchResults");
+        resultsDiv.innerHTML = "";
+
+        if (results.length > 0) {
+            results.forEach(store => {
+            const storeDiv = document.createElement("div");
+            storeDiv.className = "store";
+            storeDiv.innerHTML = `
+                <h3>${store.name}</h3>
+                <p>住所: ${store.address}</p>
+                <p>電話番号: ${store.phone}</p>
+                <p>URL: ${store.url}</p>
+            `;
+            resultsDiv.appendChild(storeDiv);
+            });
+        } else {
+            resultsDiv.innerHTML = "<p>該当する店舗が見つかりませんでした。</p>";
+        }
+        }   
+    </script>
+</body>
+</html>

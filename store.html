@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>店舗検索</title>
+    <style>
+        body{
+            align-items: center;
+        }
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } */
+        /* header {
+            text-align: center;
+            padding: 20px;
+        } */
+        .shop_title{
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 30px 10% ;
+        }
+        .region-buttons {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+            background-color: #f4f4f4;
+        }
+        .region-buttons button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #444;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .region-buttons button:hover {
+            background-color: #666;
+        }
+        .store-lists {
+            padding: 20px;
+            width: 100%;
+        }
+        .store-list {
+            display: none;
+        }
+        .store-list.active {
+            display: block;
+        }
+        .store-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        /* footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+            margin-top: 20px;
+            width: 100%;
+        } */
+    </style>
+</head>
+<body>
+    <!-------------
+        header
+    -------------->
+    <header>
+        <div class="div_flex">
+            <div class="top_logo">
+                <img src="img/wakasyatiya_footer_logo.svg" alt="">
+            </div>
+            <div class="link_list">
+                <ul>
+                    <li><a href="shop-information.html" target="_blank" rel="noopener noreferrer">店舗検索</a></li>
+                    <li><a href="menu-page.html" target="_blank" rel="noopener noreferrer">メニュー</a></li>
+                    <li><a href="taste-page.html" target="_blank" rel="noopener noreferrer">味のこだわり</a></li>
+                    <li><a href="news_page.html" target="_blank" rel="noopener noreferrer">新着情報</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="store_btn">
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/header_store_button.svg" alt="">通信販売</a>
+            </div>
+
+            <div class="sns_link">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/wakashachiya/" target="_blank" rel="noopener noreferrer"><img src="img/sns_Facebook.svg" alt=""></a>
+                        <a href="https://www.instagram.com/wakashachiya/" target="_blank" rel="noopener noreferrer"><img src="img/sns_Instagram.svg" alt=""></a>
+                        <a href="https://youtube.com/channel/UC17cf5LTLNm6l8FcOOa37sQ?si=dt_RabHOdq1sEjpm" target="_blank" rel="noopener noreferrer"><img src="img/sns_YouTube.svg" alt=""></a>
+                        <a href="https://line.me/R/ti/p/@avu1619g" target="_blank" rel="noopener noreferrer"><img src="img/sns_LINE.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-------------
+        header
+    -------------->
+    <img class="shop_title" src="img/shop_titile.png" alt="">
+    <div class="container">
+        <div class="region-buttons">
+            <button onclick="showRegion('aichi')">愛知</button>
+            <button onclick="showRegion('gifu')">岐阜</button>
+            <button onclick="showRegion('mie')">三重</button>
+            <button onclick="showRegion('kanto')">関東</button>
+        </div>
+        <div class="store-lists">
+            <div id="aichi" class="store-list active">
+                <div class="store-item">
+                    <span>アピタ刈谷店</span>
+                    <span>愛知県刈谷市稲場町2-56 アピタ刈谷店1F</span>
+                    <span>0566-29-5227</span>
+                    <a href="https://maps.google.com/?q=愛知県刈谷市稲場町2-56" target="_blank">MAP</a>
+                </div>
+                <div class="store-item">
+                    <span>ギャラリエアピタ知立店</span>
+                    <span>愛知県知立市長篠町大山18-1 ギャラリエアピタ知立1F</span>
+                    <span>0566-83-8123</span>
+                    <a href="https://maps.google.com/?q=愛知県知立市長篠町大山18-1" target="_blank">MAP</a>
+                </div>
+                <div class="store-item">
+                    <span>イオン三好SC店</span>
+                    <span>愛知県みよし市三好町青木88 イオン三好ショッピングセンター1F</span>
+                    <span>0561-33-3105</span>
+                    <a href="https://maps.google.com/?q=愛知県みよし市三好町青木88" target="_blank">MAP</a>
+                </div>
+                <div class="store-item">
+                    <span>アピタ岡崎北店</span>
+                    <span>愛知県岡崎市日名北町4-46 アピタ岡崎北店2F</span>
+                    <span>0564-25-8824</span>
+                    <a href="https://maps.google.com/?q=愛知県岡崎市日名北町4-46" target="_blank">MAP</a>
+                </div>
+                <div class="store-item">
+                    <span>アピタ安城南店</span>
+                    <span>愛知県安城市桜井町貝戸2-9-36 アピタ安城南店1F</span>
+                    <span>0566-99-3970</span>
+                    <a href="https://maps.google.com/?q=愛知県安城市桜井町貝戸2-9-36" target="_blank">MAP</a>
+                </div>
+                <div class="store-item">
+                    <span>アピタ豊田向山店</span>
+                    <span>愛知県豊橋市向山町中畑1-1 アピタ向山店1F</span>
+                    <span>0532-56-5756</span>
+                    <a href="https://maps.google.com/?q=愛知県豊橋市向山町中畑1-1" target="_blank">MAP</a>
+                </div>
+            </div>
+            <div id="gifu" class="store-list">
+                <div class="store-item">
+                    <span>岐阜店</span>
+                    <span>岐阜市○○町1-2</span>
+                    <span>058-123-4567</span>
+                    <a href="https://maps.google.com/?q=岐阜市○○町1-2" target="_blank">MAP</a>
+                </div>
+            </div>
+            <div id="mie" class="store-list">
+                <div class="store-item">
+                    <span>三重店</span>
+                    <span>三重市○○町3-4</span>
+                    <span>059-987-6543</span>
+                    <a href="https://maps.google.com/?q=三重市○○町3-4" target="_blank">MAP</a>
+                </div>
+            </div>
+            <div id="kanto" class="store-list">
+                <div class="store-item">
+                    <span>東京店</span>
+                    <span>東京都渋谷区○○1-2-3</span>
+                    <span>03-1234-5678</span>
+                    <a href="https://maps.google.com/?q=東京都渋谷区○○1-2-3" target="_blank">MAP</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-------------
+        footer
+    -------------->
+    <footer>
+        <div class="footer_main">
+            <div class="footer_title">
+                <a href="top-page.html" rel="noopener noreferrer"><img src="img/wakasyatiya_footer_logo.svg" alt=""></a>
+                <p>お問い合わせは<br>こちらから</p>
+                <p><a href="#" target="_blank" rel="noopener noreferrer">お問い合わせ　→</a></p>
+            </div>
+
+            <div class="footer_link_box">
+                <ul class="footer_link_box">
+                    <li><a href="shop-information.html">店舗検索</a></li>
+                    <li><a href="menu-page.html">メニュー</a></li>
+                    <li><a href="taste-page.html">味のこだわり</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_link_box">
+                <ul class="footer_link_box">
+                    <li><a href="company_page.html">会社案内</a></li>
+                    <li><a href="#">採用情報</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer_link_box">
+                <ul class="footer_link_box">
+                    <li><a href="media_page.html">メディア掲載</a></li>
+                    <li><a href="news_page.html">新着情報</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_sub">
+            <div class="sns_copyright">
+                <ul>
+                    <li><a href="https://www.facebook.com/wakashachiya/" target="_blank" rel="noopener noreferrer"><img src="img/sns_Facebook.svg" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/wakashachiya/" target="_blank" rel="noopener noreferrer"><img src="img/sns_Instagram.svg" alt=""></a></li>
+                    <li><a href="https://youtube.com/channel/UC17cf5LTLNm6l8FcOOa37sQ?si=dt_RabHOdq1sEjpm" target="_blank" rel="noopener noreferrer"><img src="img/sns_YouTube.svg" alt=""></a></li>
+                    <li><a href="https://line.me/R/ti/p/@avu1619g" target="_blank" rel="noopener noreferrer"><img src="img/sns_LINE.svg" alt=""></a></li>
+                </ul>
+                <p>Copyright© 株式会社若鯱家 All Rights Reserved.</p>
+            </div>
+            <div class="sdgs_1">
+                <img src="img/footer_GOALS.svg" alt="">
+            </div>
+        </div>
+    </footer>
+    <!-------------
+        footer
+    -------------->
+    <script>
+        function showRegion(regionId) {
+            const lists = document.querySelectorAll('.store-list');
+            lists.forEach(list => list.classList.remove('active'));
+            document.getElementById(regionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

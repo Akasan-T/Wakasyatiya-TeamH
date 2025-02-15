@@ -1,0 +1,1357 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*----初期設定----*/
+
+img{
+    width: 100%;
+}
+
+a{
+    outline: none;
+}
+
+/*----初期設定----*/
+
+
+/*----共通部分----*/
+
+/*----header----*/
+.div_flex{
+    display: flex;
+    margin: 0.5% 0;
+}
+
+
+.top_logo{
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+.top_logo img{
+    width: 50%;
+}
+
+
+.link_list{
+    flex-grow: 2;
+    margin-top: 2%;
+}
+
+
+.link_list ul{
+    display: flex;
+}
+
+
+.link_list li:not(:first-child){
+    margin: 0 0 0 7%;
+}
+
+
+.store_btn{
+    background: #FFCF6E;
+    border: 1px solid #F4B12B;
+    border-radius: 10px;
+    font-size: 26px;
+    width: 14%;
+    height: 100%;
+    padding: 1% 2%;
+    margin: 0.5% 1% 0 0;
+}
+
+
+.store_btn img{
+    width: 19%;
+    margin-right: 8%;
+}
+
+
+.sns_link{
+    flex-grow: 2;
+    margin-top: 1.3%;
+}
+
+
+.sns_link a{
+    margin-left: 5%;
+}
+
+
+.sns_link img{
+    width: 10%;
+}
+/*----header----*/
+
+/*----footer----*/
+footer{
+    background-image: url(../img/bg.jpeg);
+}
+
+
+.footer_main{
+    display: flex;
+    padding: 3% 0;
+}
+
+
+.footer_title{
+    flex-grow: 0.5;
+    text-align: center;
+    margin-right: 15%;
+}
+
+
+.footer_title img{
+    width: 35%;
+}
+
+
+.footer_title p{
+    margin-top: 8%;
+}
+.footer_title p:first-of-type{
+    margin-top: 5%;
+}
+
+
+.footer_title p a{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 3% 8%;
+}
+
+
+.footer_link_box{
+    flex-grow: 0.1;
+    margin-top: 4%;
+    line-height: 250%;
+}
+
+
+.footer_sub{
+    margin: 0 auto;
+    border-top: 1px solid #000000;
+    width: 75%;
+    margin-top: 2%;
+    padding-top: 2%;
+}
+
+.sns_copyright{
+    display: flex;
+}
+.sns_copyright ul{
+    display: flex;
+    width: 45%;
+}
+.sns_copyright li{
+    padding-right: 3%;
+}
+.sns_copyright p{
+    margin: 0 0 0 auto;
+}
+
+.sdgs_1{
+    padding: 10% 0 5%;
+    text-align: center;
+}
+.sdgs_1 img{
+    width: 25%;
+}
+/*----footer----*/
+
+/*----共通部分----*/
+
+
+/*-----------------
+    　top_pege
+-----------------*/
+/*----parent_section----*/
+.parent_section{
+    text-align: center;
+    margin: 8% 0;
+}
+
+.parent_text h2{
+    font-size: 40px;
+    margin-bottom: 3%;
+}
+
+
+.item_list{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+
+.item_list_div{
+    border-right: 1px solid #000000;
+    width: 28%;
+    padding: 0 3%;
+}
+
+
+.item_list_div:first-child{
+    border-left: 1px solid #000000;
+}
+
+
+.item_list_div div{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+.item_list_div p{
+    margin-top: 8%;
+}
+
+
+.item_list_div p:first-child{
+    margin-top: 13%;
+}
+/*----parent_section----*/
+
+/*----about_section----*/
+.about_section{
+    background-image: url(../img/bg.jpeg);
+    padding: 3% 0;
+}
+
+.about_main{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 4%;
+}
+
+.about_text_box{
+    width: 27%;
+    margin: 3% 5% 0;
+}
+.about_text_box h1{
+    font-size: 40px;
+    margin: 10% 0 5%;
+    letter-spacing: 2px;
+    line-height: 140%;
+}
+.about_text_box p{
+    line-height: 230%;
+    letter-spacing: 2px;
+}
+
+.about_button{
+    text-align: center;
+    margin-top: 4%;
+}
+/*----about_section----*/
+
+
+/*----menu_section----*/
+.title h1{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    padding: 6% 0 6%;
+    letter-spacing: 1px;
+}
+
+.menu_section{
+    background-image: url(../img/bg.jpeg);
+    padding-bottom: 5%;
+}
+
+.menu_main h1{
+    position: relative;
+    font-size: 40px;
+    right: 44%;
+}
+.udon_menu_first h1{
+    right: 22%;
+}
+.menu_main span{
+    color: #E34234;
+}
+.menu_main ul{
+    flex-direction: column;
+    text-align: right;
+    margin: 4% 0 0;
+}
+
+.udon_menu_first{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 3%;
+}
+
+
+.menu_div_02{
+    width: 25%;
+    margin-right: 2%;
+}
+.menu_div_02 ul{
+    letter-spacing: 2px;
+    line-height: 250%;
+    margin: 15% 0 0 7%;
+}
+.menu_div_02 li{
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.menu_button{
+    text-align: center;
+    font-size: 40px;
+    padding: 3% 0;
+}
+/*----menu_section----*/
+
+/*----news_section----*/
+.news_title{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    padding: 6% 0 6%;
+    letter-spacing: 1px;
+}
+
+
+.news_box_inner{
+    margin-bottom: 6%;
+}
+
+.item_box{
+    background: #F3EBE0;
+    width: 75%;
+    margin: 0 auto;
+}
+.item_box ul{
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 1%;
+}
+.item_box li{
+    display: flex;
+    border-bottom: 1px dotted #000000;
+    padding: 2.5% 0 1.5% 3%;
+}
+.item_box p{
+    padding: 0 5%;
+}
+.item_box h2{
+    border: 1px solid #000000;
+    width: 10%;
+    text-align: center;
+}
+
+
+.news_button p{
+    text-align: right;
+    padding: 2.5% 2.5% 2.5% 0;
+}
+/*----news_section----*/
+/*-----------------
+    　top_pege
+-----------------*/
+
+
+/*----company_page----*/
+
+.company_page_title{
+    font-size: 58px;
+    border-left:5px solid #CBC1A7; /*線の設定*/
+    padding:2px 8px; /*余白の設定*/
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+/*トップ画*/
+.campany_page_top_img{
+    width: 100%; 
+}
+
+/*---ご挨拶---*/
+.company_page_top{
+    display: flex;
+}
+
+.company_page_top h2{
+    margin : 90px 0; 
+}
+.president_text_top_greeting_text p{
+    white-space: nowrap;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.company_page_top_div{
+    margin:0 8%;
+}
+
+.company_page_top_title{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.company_page_sabutitle{
+    writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    margin-bottom: 30px;
+    font-size: 40px;
+    margin-top: 120px; 
+    margin-left: 20%;
+    border-left:2px solid #000000; /*線の設定*/
+    padding:4px 10%; /*余白の設定*/
+}
+
+/*想いは名古屋から世界へ*/
+
+.company_page_sabutitle_text{
+    padding: 50px 0;
+}
+
+.company_page_Commitment_span{
+    font-weight: bold;
+    background: linear-gradient(transparent 50%, RGB(255, 200, 150) 50%);
+    padding:0 5px;
+}
+
+.thought_text_title p{
+    font-size: 40px;
+    
+}
+
+.thought_text_title_bottom{
+    margin-bottom: 40px;
+}
+
+.CEO_Message p{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.CEO_name{
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+
+.president_text_top {
+    display: flex;          /* Flexbox を適用 */
+    justify-content: space-between; /* 左右の余白を調整 */
+    align-items: center;    /* 垂直方向を中央揃え */
+}
+
+.management_philosophy_img_top{
+    width: 40%;
+    margin-left: auto;
+    margin-top: 90px;
+    margin-bottom: 10px;
+}
+
+/*---経営理念---*/
+
+.company_page_title h3{
+    margin: 80px 0 20px;
+}
+
+.management_philosophy{
+    background-color: #F1F1F1;
+}
+
+.company_credo{
+    display: inline-block; /* 幅をテキストに合わせる */
+    padding: 10px 40px; /* 内側の余白 */
+    border: 2px solid black; /* 枠線の色と太さ */
+    margin-bottom: 50px; /* 下の余白 */
+    background-color: white;
+    margin-top: 30px;
+}
+
+.Management_philosophy_box{
+    display: inline-block; /* 幅をテキストに合わせる */
+    padding: 10px 40px; /* 内側の余白 */
+    border: 2px solid black; /* 枠線の色と太さ */
+    margin: 60px 45% 30px; /* 下の余白 */
+    background-color: white;
+    text-align: center;
+}
+
+.Customer_first{
+    margin-bottom: 40px;
+    font-size: 43px;
+}
+
+.management_philosophy_top_text p{
+    font-size: 16px;
+    margin-bottom: 8px;
+    white-space: nowrap;
+     
+}
+.management_philosophy_margin_sido{
+    margin:0 8%; 
+}
+
+.management_philosophy_top{
+    display: flex;
+    margin-top: 90px; 
+}
+
+.management_philosophy_box{
+   display: inline-block;
+    margin: 0 auto;
+}
+
+
+.management_philosophy_text_title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.management_philosophy_text_title_top{
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+
+.management_philosophy_text_title_bottom{
+    margin-bottom: 50px;
+}
+
+.management_philosophy_bottom{
+    width: 40%; 
+}
+
+.MVV_img{
+    margin-top: 30px;
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.MVV_img img{
+    margin-bottom: 50px;
+}
+
+.company_page_text_01{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.Company_overview_main{
+    margin: 0 8%;
+}
+
+.company_page_title h4{
+    margin-top: 90px;
+    margin-bottom: 90px;   
+}
+
+/* 全体のスタイル */
+
+/* セクションタイトル */
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* コンテナのスタイル */
+.company-overview {
+    width: 80%;
+    margin: 0 auto; /* 中央配置 */
+    padding: 20px 0;
+}
+
+.company-overview span{
+    font-size: 25px;
+}
+
+
+/* 各項目のスタイル */
+.overview-item {
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+    border-bottom: 2px solid #ddd; /* 下線 */
+    padding: 10px 0;
+}
+
+/* タイトル部分 */
+.item-title {
+    font-size: 16px;
+    font-weight: bold;
+    flex-basis: 10%; /* 幅の割合 */
+}
+
+/* 縦線部分 */
+.item-divider {
+    width: 2px;
+    height: 30px; /* 縦線の高さ */
+    background-color: #CBC1A7;
+    margin: 0 10px; /* 横の余白 */
+}
+
+.company_page_title_margin{
+    margin: 0 8%;
+}
+
+/* テキスト部分 */
+.item-text {
+    font-size: 14px;
+    flex-grow: 1; /* 残りの幅を占める */
+}
+
+/*---沿革---*/
+.History_img{
+    margin-top: 40px;
+}
+
+/* タイムラインのスタイル */
+.timeline {
+    width: 80%;
+    padding: 20px 0;
+}
+
+/* リストのスタイル */
+.timeline-list {
+    list-style-type: disc; /* デフォルトのリストスタイルを使用 */
+    margin: 0;
+    padding: 0 20px; /* リスト全体に余白を追加 */
+}
+
+/* 各リスト項目 */
+.timeline-list li {
+    margin-bottom: 10px; /* 項目間の余白 */
+    display: flex; /* 日付とテキストを横並びに */
+    align-items: flex-start; /* テキストを上揃え */
+}
+
+/* 日付部分 */
+.timeline-date {
+    font-weight: bold;
+    margin-right: 10px; /* 日付とテキストの間の余白 */
+    white-space: nowrap; /* 日付が折り返されないように */
+}
+
+/* テキスト部分 */
+.timeline-text {
+    line-height: 1.6;
+    color: #333;
+}
+
+.organization_chart_text p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+}
+
+.organization_chart_img{
+    margin-top: 50px;
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.item-divider1 {
+    width: 2px;
+    height: 30px; /* 縦線の高さ */
+    background-color: #CBC1A7;
+    margin: 0 10px; /* 横の余白 */
+}
+
+.item-title1 {
+    font-size: 16px;
+    font-weight: bold;
+    flex-basis: 17%; /* 幅の割合 */
+}
+
+.company_page_title_h6 {
+    position: relative;
+    font-size: 58px;
+    border-left:5px solid #CBC1A7; /*線の設定*/
+    padding:2px 8px; /*余白の設定*/
+    margin-top: 90px;
+}
+
+.SDGs_page{
+    background: url("../img/sdgs-bg.png") no-repeat center top;
+    width: 100%;
+}
+
+.SDGs_page_margin{
+    margin:0 8% ;
+}
+
+.company_page_maintitle p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+.company_page_maintitle_top{
+    margin-top: 90px;
+    padding-bottom: 10px;
+}
+
+.company_page_maintitle_bottom{
+    margin-bottom: 40px;
+}
+
+.yellow_box{
+    font-size: 16px;
+    background-color: #FFF8CC;
+    padding: 30px 3%;
+}
+
+.What_is_SDGs_title{
+    justify-content: center;
+    padding: 15px 0 20px;
+}
+
+.What_is_SDGs_title_1{
+    margin: 40px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.What_is_SDGs_title_2{
+    margin: 40px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.What_is_SDGs_title_Contents p{
+    line-height: 2; 
+}
+
+.SDGs_logo_div_1{
+    display: flex;
+    width: 10% ;
+    margin-bottom: 30px;
+}
+
+.SDGs_logo_div_1 img{
+    margin-right: 10%;
+}
+
+.What_is_SDGs_title_Contents_2{
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.SDGs_img{
+    width: 45%;
+    display: flex;
+}
+
+.SDGs_img img{
+    display: block;
+    margin-bottom: 50px;
+}
+
+.img01{
+    margin-right: 10%;
+}
+
+.sustainable_page{
+    display: flex;
+}
+
+.sustainable_page_img{
+    width: 40%;
+    margin-right: 8%; 
+    margin-left: 3%;
+    margin-bottom: 40px;
+}
+
+.What_is_SDGs_title_Contents_text_top{
+    margin-bottom: 20px;
+}
+
+.What_is_SDGs_title_Contents_text_bottom{
+    margin-bottom: 120px;
+}
+/*----company_page----*/
+
+/*----news_page----*/
+
+.news_page{
+    list-style-type: none;
+    display: flex;
+    width: 83%;
+    margin: 5% auto;
+}
+
+
+.news_page h1{
+    font-size: 40px;
+}
+
+
+.news_item_list{
+    width: 50%;
+    margin: 1% auto 0;
+}
+
+
+.news_item{
+    display: flex;
+    border-bottom: 1px dotted #000000;
+    padding: 3% 0;
+}
+.news_item:last-child{
+    border-bottom: none;
+}
+
+
+.item_title{
+    width: 15%;
+}
+
+
+.item_title div{
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 5% 0;
+    margin: 20% 0 0;
+}
+
+
+.item_text{
+    margin: auto 0 auto auto;
+}
+
+
+.year_btn_list{
+    color: #ffffff;
+    width: 18%;
+}
+
+
+.year_btn_list_div div{
+    background: #2F2F2F;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8% 0;
+    margin: 2%;
+}
+
+
+.year_btn_list_div:not(:first-child) div{
+    width: 45%;
+    padding: 5% 0;
+}
+
+
+.year_btn_list_div:not(:first-child){
+    display: flex;
+}
+/*----news_page----*/
+/*-----------------
+    　/menu_pege
+-----------------*/
+.main_box{
+	display: flex;
+	width: 85%;
+	margin: 50px auto;
+}
+.menu{
+	text-align: center;
+	width: 35%;
+	height: 450px;
+	border: solid 1px #fff;
+	box-shadow: 1px 1px 5px;
+	border-radius: 20px;
+	margin: 0 10px;
+}
+.menu_2{
+	text-align: center;
+	width: 30%;
+	height: 450px;
+	border: solid 1px #fff;
+	box-shadow: 1px 1px 5px;
+	border-radius: 20px;
+	margin: 0 10px;
+}
+.menu_2 img{
+	width: 70%;
+}
+.menu_int{
+	display: flex;
+	margin: 0 0 30px 30px;
+}
+.menu_int_2{
+	display: flex;
+	margin: 10px 10px 30px ;
+	justify-content: center;
+}
+.menu img{
+	width: 70%;
+}
+.mune_select{
+	width: 20%;
+	text-align: center;
+}
+.mune_select h2{
+	font-size: 36px;
+	border-left: solid 10px #FFCF6E;
+	margin: 0 0 40px;
+}
+.mune_select h3{
+	margin-bottom: 30px;
+}
+.mune_select ul li{
+	background: #2F2F2F;
+	color: #fff;
+	padding: 20px 0;
+	margin: 10px;
+	border-radius: 10px;
+}
+.menu h4{
+	font-size: 29px;
+	margin: 10px auto;
+	border-bottom: solid 1px #000;
+	width: 90%;
+}
+.menu p{
+	line-height: 1.8;
+	margin-top: 10px;
+}
+.allergy{
+	display: flex;
+	justify-content: center;
+	margin: 10px 0 0;
+}
+.allergy div p{
+	margin: -5px 0 0;
+}
+
+.menu_2 h4{
+	font-size: 29px;
+	margin: 10px auto;
+	border-bottom: solid 1px #000;
+	width: 90%;
+}
+.menu_2 p{
+	line-height: 1.8;
+	margin-top: 10px;
+}
+/*-----udon-----*/
+.menu_udon{
+	text-align: center;
+	width: 100%;
+	
+}
+.menu_udon h2{
+	font-size: 36px;
+	border-bottom: solid 2px #000;
+	margin-bottom: 30px;
+	padding: 0 0 10px;
+	display: inline-block;
+}
+/*-----その他-----*/
+.menu_others{
+	display: none;
+	width: 100%;
+	text-align: center;
+}
+.menu_others_1 img{
+	width: 70%;
+}
+.menu_others_1 h4{
+	font-size: 29px;
+	margin: 10px auto;
+	border-bottom: solid 1px #000;
+	width: 90%;
+}
+.menu_others_1 p{
+	line-height: 1.8;
+	margin-top: 10px;
+}
+.menu_others_1{
+	text-align: center;
+	width: 30%;
+	height: 450px;
+	border: solid 1px #fff;
+	box-shadow: 1px 1px 5px;
+	border-radius: 20px;
+	margin: 0 auto 50px; 
+}
+.menu_others h2{
+	font-size: 36px;
+	border-bottom: solid 2px #000;
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	display: inline-block;
+}
+.menu_others_2 h4{
+	font-size: 29px;
+	margin: 10px auto;
+	border-bottom: solid 1px #000;
+	width: 80%;
+}
+
+.menu_others_2{
+	text-align: center;
+	width: 30%;
+	height: 450px;
+	border: solid 1px #fff;
+	box-shadow: 1px 1px 5px;
+	border-radius: 20px;
+	margin: 0 10px;
+}
+.allergy_others{
+	display: flex;
+	justify-content: center;
+	margin: 20px 0 0;
+}
+.allergy_others img{
+	width: 75%;
+}
+.soba{
+	margin-top: 7px;
+}
+/*ーーー*/
+/*セット*/
+.menu_set{
+	display: none;
+	width: 100%;
+	text-align: center;
+}
+.menu_set h2{
+	font-size: 36px;
+	border-bottom: solid 2px #000;
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	display: inline-block;
+}
+.menu_set_1{
+	text-align: center;
+	width: 30%;
+	height: 350px;
+	border: solid 1px #fff;
+	box-shadow: 1px 1px 5px;
+	border-radius: 20px;
+	margin: 0 10px;
+}
+.menu_set_1 h4{
+	font-size: 26px;
+	margin: 10px auto;
+	border-bottom: solid 1px #000;
+	width: 90%;
+}
+.set_h3{
+	font-size: 28px;
+	margin: 70px 0 0;
+}
+.set_age{
+	display: flex;
+	margin-top: 60px;
+}
+
+/*ーーー*/
+/*don*/
+.menu_don{
+	display: none;
+	width: 100%;
+	text-align: center;
+}
+.menu_don h2{
+	font-size: 36px;
+	border-bottom: solid 2px #000;
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	display: inline-block;
+}
+.menu_don_1{
+	text-align: center;
+	width: 30%;
+	height: 400px;
+	border: solid 1px #fff;
+	box-shadow: 1px 1px 5px;
+	border-radius: 20px;
+	margin: 0 auto 50px; 
+}
+.menu_don_1 img{
+	width: 75%;
+}
+
+.menu_don_1 h4{
+	font-size: 29px;
+	margin: 10px auto;
+	border-bottom: solid 1px #000;
+	width: 90%;
+}
+.allergy_don{
+	display: flex;
+	justify-content: center;
+	margin: 20px 0 0;
+}
+.allergy_don img{
+	width: 70%;
+}
+.kani{
+	margin: 7px 0 0;
+}
+/*ーーー*/
+/*one*/
+.menu_one{
+	display: none;
+	width: 100%;
+	text-align: center;
+}
+.menu_one h2{
+	font-size: 36px;
+	border-bottom: solid 2px #000;
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	display: inline-block;
+}
+/*ーーー*/
+/*child*/
+.menu_child{
+	display: none;
+	width: 100%;
+	text-align: center;
+}
+.menu_child h2{
+	font-size: 36px;
+	border-bottom: solid 2px #000;
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	display: inline-block;
+}
+/*ーーー*/
+/*topping*/
+.menu_topping{
+	display: none;
+	width: 100%;
+	text-align: center;
+}
+.menu_topping h2{
+	font-size: 36px;
+	border-bottom: solid 2px #000;
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	display: inline-block;
+}
+/*ーーー*/
+/*-----------------
+    　menu_pege/
+-----------------*/
+/*-----taste_page-----*/
+.taste_title{
+	position: relative;
+	text-align: center;
+}
+.taste_title_h1{
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	background: rgba(255,255,255,0.3);
+	backdrop-filter: blur(5px);
+	padding: 50px 100px;
+	font-size: 24px;
+	border: solid 1px  rgba(255,255,255,0.5);
+}
+.taste_title_h1 span{
+	font-weight: bold;
+}
+.curry_img{
+	text-align: center;
+	margin: 100px 0 100px 0;
+}
+.curry_text h2{
+	margin: 0 0 40px;
+	font-size: 48px;
+}
+.curry_text p{
+	line-height: 2;
+	margin: 0 0 50px;
+}
+.curry_fot{
+	width: 50%;
+	display: flex;
+	margin: 0 auto;
+	
+}
+
+/*------media_page------*/
+.narrow_down_section{
+    margin: 4% 0 8%;
+}
+
+
+.narrow_down_section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.narrow_down_section p{
+    padding: 0 1.5%;
+}
+
+
+.media_main{
+    margin: 0 0 5%;
+}
+
+
+.media_item{
+    display: flex;
+    margin: 0 auto;
+    border-bottom: dotted 1px #000000;
+    width: 50%;
+}
+
+
+.media_item p{
+    line-height: 150%;
+    padding: 0 4% 0 0;
+    margin: 4% 0 2%;
+}
+
+
+.media_item p:not(:first-child){
+    padding: 1% 7.5% 0 0;
+}
+
+
+.media_item p:last-child{
+    width: 60%;
+    padding: 0;
+}
+/*------media_page------*/
+
+/*---------------
+    detail
+----------------*/
+.detail_body h1{
+    font-size: 40px;
+}
+.detail_img img{
+    border: 1px solid #CBC1A7;
+    border-radius: 10px;
+    margin: 0 3%;
+}
+.detail_img_men{
+    margin: 0 0 0 10%;
+}
+.detail_img_soup{
+    margin: 0 10% 0 0;
+}
+/*-----curry roux-----*/
+.detail_main_item1{
+    text-align: center;
+    margin: 8% 0;
+    
+}
+.link a{
+    margin: 2% 9% 0;
+}
+
+
+.detail_main_item1 p{ 
+    font-size: 16px;
+    margin: 4% 0;
+    line-height: 3;
+}
+
+
+.detail_main_item1 img{
+    width: 25%;
+}
+/*-----curry roux-----*/
+
+/*-----noodles soup-----*/
+.detail_item2_div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6%;
+}
+
+
+.detail_item2_text{
+    text-align: center;
+    width: 55%;
+    margin: 0 0 0 5%;
+    padding: 5% 0;
+}
+.detail_item2_text p{
+    margin-top: 5%;
+    line-height: 2;
+}
+
+
+.detail_row{
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+}
+
+
+.detail_row_div{
+    margin: 0 5% 0 0;
+}
+/*-----noodles soup-----*/
+
+/*-----noodle dojo-----*/
+.detail_main_item5{
+    margin: 0 auto;
+    text-align: center;
+    width: 87%;
+}
+
+
+.detail_main_item5 h1{
+    margin-bottom: 4%;
+}
+.detail_main_item5 p{
+    line-height: 2;
+    letter-spacing: 1px;
+}
+.yukiri{
+    display: flex;
+    justify-content: center;
+}
+.yukiri img{
+    width: 40%;
+    margin: 5% 3%;
+}
+
+/*-----noodle dojo-----*/
+/*-----img_section-----*/
+.detail_main_item6{
+    margin: 5% 0;
+    text-align: center;
+}
+
+
+.detail_main_item6 img{
+    width: 28.6%;
+}
+
+
+.detail_item6_div{
+    margin-bottom: 0.4%;
+}
+
+.detail_item6_div img{
+    width: 43%;
+}
+/*-----img_section-----*/
+/*---------------
+    detail
+----------------*/
